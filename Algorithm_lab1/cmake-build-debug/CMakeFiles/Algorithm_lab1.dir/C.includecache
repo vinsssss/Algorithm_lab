@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/89252/CLionProjects/Algorithm_lab1/main.c
+seqlist.h
+C:/Users/89252/CLionProjects/Algorithm_lab1/seqlist.h
+stdio.h
+-
+string.h
+-
+
+C:/Users/89252/CLionProjects/Algorithm_lab1/seqlist.h
+
