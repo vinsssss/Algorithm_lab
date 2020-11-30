@@ -8,15 +8,15 @@
 #define MAX_SIZE 2000
 
 int main() {
-    struct List *L;
     Link head, tail;
-    L = CreateLList(CreateData,
-                    DeleteData,
-                    DuplicatedNode,
-                    NodeDataCmp);
     char wd[2];
     char str[MAX_SIZE];
     while (scanf("%s", str) != EOF) {
+        struct List *L;
+        L = CreateLList(CreateData,
+                        DeleteData,
+                        DuplicatedNode,
+                        NodeDataCmp);
         int i = 0;
         int conflag = 0;
         for (; i < MAX_SIZE; i++) {
@@ -28,7 +28,7 @@ int main() {
             // printf("data: %s\n", wd);
             if (!AddNodeAtHead(L, wd))
             {
-                printf("Warning! Error while adding node to L.\n");
+                printf("添加节点错误！\n");
                 conflag = 1;
                 break;
             }
@@ -44,6 +44,7 @@ int main() {
         int flag = 1;
         for (; head != NULL && tail != NULL; head = head->next, tail = tail->prev) {
             if (NodeDataCmp((head->pdata), (tail->pdata)) != 0) {
+                // printf("%s %s",((pND)(head->pdata))->word, ((pND)(tail->pdata))->word);
                 printf("0\n");
                 flag = 0;
                 break;
@@ -51,6 +52,7 @@ int main() {
         }
         if (flag)
             printf("1\n");
+        free(L);
     }
     return 0;
 }

@@ -8,20 +8,18 @@
 #define MASK 0x1F //16进制下的31
 #define N 1000000
 int bitmap[1 + N / WORD];
-/*
- * 置位函数——用"|"操作符,i&MASK相当于mod操作
- * m mod n 运算，当n = 2的X次幂的时候,m mod n = m&(n-1)
- */
+
 void set(int i) {
     // m mod n = m&(n-1)
-    // 1 << (i & MASK) = 2^i
+    // 1 << (i & MASK) = 2^(i mod 32)
     bitmap[i >> SHIFT] |= (1 << (i & MASK));
 }
 /* 清除位操作，用&~操作符 */
 void clear(int i) {
     bitmap[i >> SHIFT] &= ~(1 << (i & MASK));
 }
-/* 测试位操作用&操作符 */
+
+//不在位图中返回0，在位图中返回2^(i mod 32)
 int test(int i) {
     return bitmap[i >> SHIFT] & (1 << (i & MASK));
 }

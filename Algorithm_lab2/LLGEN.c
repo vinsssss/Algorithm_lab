@@ -95,17 +95,3 @@ Link CreateNode(struct List *L, void *data) {
     } else
         return (new_node);
 }
-
-Link GotoNext(struct List *L, Link pcurr) {
-    if (pcurr->next == NULL || pcurr == LLTail)
-        return (NULL);
-    else
-        return (pcurr->next);
-}
-
-Link GotoPrev(struct List *L, Link pcurr) {
-    if (pcurr->prev == NULL || pcurr == LLHead)
-        return (NULL);
-    else
-        return (pcurr->prev);
-}

@@ -44,10 +44,4 @@ struct List *CreateLList(
 //创建结点
 Link CreateNode(struct List *, void *);
 
-//获取下一结点
-Link GotoNext(struct List *, Link);
-
-//获取前一结点
-Link GotoPrev(struct List *, Link);
-
 #endif //ALGORITHM_LAB2_LLGEN_H
