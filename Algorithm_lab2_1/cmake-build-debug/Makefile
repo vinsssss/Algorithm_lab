@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2
+CMAKE_SOURCE_DIR = /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2/cmake-build-debug/CMakeFiles /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1/cmake-build-debug/CMakeFiles /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,71 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Algorithm_lab2
+# Target rules for targets named Algorithm_lab2_1
 
 # Build rule for target.
-Algorithm_lab2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Algorithm_lab2
-.PHONY : Algorithm_lab2
+Algorithm_lab2_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Algorithm_lab2_1
+.PHONY : Algorithm_lab2_1
 
 # fast build rule for target.
-Algorithm_lab2/fast:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/build
-.PHONY : Algorithm_lab2/fast
-
-LLAPP.o: LLAPP.c.o
-
-.PHONY : LLAPP.o
-
-# target to build an object file
-LLAPP.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/LLAPP.c.o
-.PHONY : LLAPP.c.o
-
-LLAPP.i: LLAPP.c.i
-
-.PHONY : LLAPP.i
-
-# target to preprocess a source file
-LLAPP.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/LLAPP.c.i
-.PHONY : LLAPP.c.i
-
-LLAPP.s: LLAPP.c.s
-
-.PHONY : LLAPP.s
-
-# target to generate assembly for a file
-LLAPP.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/LLAPP.c.s
-.PHONY : LLAPP.c.s
-
-LLGEN.o: LLGEN.c.o
-
-.PHONY : LLGEN.o
-
-# target to build an object file
-LLGEN.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/LLGEN.c.o
-.PHONY : LLGEN.c.o
-
-LLGEN.i: LLGEN.c.i
-
-.PHONY : LLGEN.i
-
-# target to preprocess a source file
-LLGEN.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/LLGEN.c.i
-.PHONY : LLGEN.c.i
-
-LLGEN.s: LLGEN.c.s
-
-.PHONY : LLGEN.s
-
-# target to generate assembly for a file
-LLGEN.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/LLGEN.c.s
-.PHONY : LLGEN.c.s
+Algorithm_lab2_1/fast:
+	$(MAKE) -f CMakeFiles/Algorithm_lab2_1.dir/build.make CMakeFiles/Algorithm_lab2_1.dir/build
+.PHONY : Algorithm_lab2_1/fast
 
 main.o: main.c.o
 
@@ -183,7 +129,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/main.c.o
+	$(MAKE) -f CMakeFiles/Algorithm_lab2_1.dir/build.make CMakeFiles/Algorithm_lab2_1.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -192,7 +138,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/main.c.i
+	$(MAKE) -f CMakeFiles/Algorithm_lab2_1.dir/build.make CMakeFiles/Algorithm_lab2_1.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -201,7 +147,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_lab2.dir/build.make CMakeFiles/Algorithm_lab2.dir/main.c.s
+	$(MAKE) -f CMakeFiles/Algorithm_lab2_1.dir/build.make CMakeFiles/Algorithm_lab2_1.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -212,13 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Algorithm_lab2"
-	@echo "... LLAPP.o"
-	@echo "... LLAPP.i"
-	@echo "... LLAPP.s"
-	@echo "... LLGEN.o"
-	@echo "... LLGEN.i"
-	@echo "... LLGEN.s"
+	@echo "... Algorithm_lab2_1"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

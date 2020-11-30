@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1/BITMAP.h
+
+/Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1/main.c
+stdio.h
+-
+BITMAP.h
+/Users/vins/CLionProjects/Algorithm_lab/Algorithm_lab2_1/BITMAP.h
+

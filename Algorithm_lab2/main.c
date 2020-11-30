@@ -14,12 +14,11 @@ int main() {
                     DeleteData,
                     DuplicatedNode,
                     NodeDataCmp);
-
-    // printf("Hello, World!\n");
     char wd[2];
     char str[MAX_SIZE];
-    while (scanf_s("%s", str, MAX_SIZE) != EOF) {
+    while (scanf("%s", str) != EOF) {
         int i = 0;
+        int conflag = 0;
         for (; i < MAX_SIZE; i++) {
             if (str[i] == '\0') {
                 break;
@@ -28,10 +27,18 @@ int main() {
             wd[1] = '\0';
             // printf("data: %s\n", wd);
             if (!AddNodeAtHead(L, wd))
+            {
                 printf("Warning! Error while adding node to L.\n");
+                conflag = 1;
+                break;
+            }
         }
-        // L->LCount = i;
-        printf("%d\n", L->LCount);
+        // printf("%d\n", L->LCount);
+        if(conflag)
+        {
+            printf("-1\n");
+            continue;
+        }
         head = L->LHead;
         tail = L->LTail;
         int flag = 1;
