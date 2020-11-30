@@ -4,6 +4,7 @@
 
 #include <stdlib.h>         /* for free() */
 #include <string.h>         /* for strcmp() and strdup() */
+#include <stdio.h>
 
 #include "LLGEN.h"
 #include "LLAPP.h"
@@ -20,7 +21,7 @@ void * CreateData ( void * data )
 
     /*--- move the values into the data structure ---*/
     new_data->word =  strdup ( (char *) data );
-
+    // printf("word: %s\n", new_data->word);
     if ( new_data->word == NULL )   /* error copying string */
     {
         free ( new_data );

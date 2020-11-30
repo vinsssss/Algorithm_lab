@@ -4,6 +4,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 #define IN_LL_LIB   1   /* in the library of primitives */
 
@@ -28,6 +29,7 @@
 int AddNodeAtHead(struct List *L, void *nd) {
     Link pn;
 
+    // printf("data: %s\n", (char *) nd);
     pn = CreateNode(L, nd);
     if (pn == NULL)
         return (0);
