@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/89252/CLionProjects/Algorithm_lab1/123123.c" "C:/Users/89252/CLionProjects/Algorithm_lab1/cmake-build-debug/CMakeFiles/Algorithm_lab1.dir/123123.c.obj"
-  "C:/Users/89252/CLionProjects/Algorithm_lab1/main.c" "C:/Users/89252/CLionProjects/Algorithm_lab1/cmake-build-debug/CMakeFiles/Algorithm_lab1.dir/main.c.obj"
-  "C:/Users/89252/CLionProjects/Algorithm_lab1/seqlist.c" "C:/Users/89252/CLionProjects/Algorithm_lab1/cmake-build-debug/CMakeFiles/Algorithm_lab1.dir/seqlist.c.obj"
+  "/Users/vins/CLionProjects/Algorithm_lab1/linklist.c" "/Users/vins/CLionProjects/Algorithm_lab1/cmake-build-debug/CMakeFiles/Algorithm_lab1.dir/linklist.c.o"
+  "/Users/vins/CLionProjects/Algorithm_lab1/main.c" "/Users/vins/CLionProjects/Algorithm_lab1/cmake-build-debug/CMakeFiles/Algorithm_lab1.dir/main.c.o"
+  "/Users/vins/CLionProjects/Algorithm_lab1/seqlist.c" "/Users/vins/CLionProjects/Algorithm_lab1/cmake-build-debug/CMakeFiles/Algorithm_lab1.dir/seqlist.c.o"
   )
-set(CMAKE_C_COMPILER_ID "MSVC")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
