@@ -4,7 +4,7 @@
 #ifndef ALGORITHM_LAB2_1_BITMAP_H
 #define ALGORITHM_LAB2_1_BITMAP_H
 #define WORD 32
-#define SHIFT 5 ////移动5个位,左移则相当于乘以32,右移相当于除以32取整
+#define SHIFT 5 //移动5位,左移则相当于乘以32,右移相当于除以32取整
 #define MASK 0x1F //16进制下的31
 #define N 1000000
 int bitmap[1 + N / WORD];

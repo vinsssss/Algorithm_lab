@@ -26,25 +26,26 @@ int main() {
             wd[0] = str[i];
             wd[1] = '\0';
             // printf("data: %s\n", wd);
-            if (!AddNodeAtHead(L, wd))
-            {
+            if (!AddNodeAtHead(L, wd)) {
                 printf("添加节点错误！\n");
                 conflag = 1;
                 break;
             }
         }
         // printf("%d\n", L->LCount);
-        if(conflag)
-        {
+        if (conflag) {
             printf("-1\n");
+            free(L);
             continue;
         }
         head = L->LHead;
         tail = L->LTail;
         int flag = 1;
-        for (; head != NULL && tail != NULL; head = head->next, tail = tail->prev) {
+        for (int i = 0; head != NULL && tail != NULL; head = head->next, tail = tail->prev, i++) {
             if (NodeDataCmp((head->pdata), (tail->pdata)) != 0) {
                 // printf("%s %s",((pND)(head->pdata))->word, ((pND)(tail->pdata))->word);
+                if (i == (L->LCount) / 2)
+                    break;
                 printf("0\n");
                 flag = 0;
                 break;
