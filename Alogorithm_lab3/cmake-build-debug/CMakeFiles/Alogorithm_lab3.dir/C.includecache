@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/LLAPP.h
+
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/LLGEN.h
+
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/main.c
+stdio.h
+-
+ctype.h
+-
+string.h
+-
+stdlib.h
+-
+LLGEN.h
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/LLGEN.h
+LLAPP.h
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/LLAPP.h
+

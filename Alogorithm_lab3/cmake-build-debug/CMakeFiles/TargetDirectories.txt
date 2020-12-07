@@ -1,0 +1,3 @@
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/Alogorithm_lab3.dir
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
