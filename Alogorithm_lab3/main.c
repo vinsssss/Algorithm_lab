@@ -62,7 +62,6 @@ int main() {
         hash_key = (unsigned int) ElfHash(data.phoneNumber);
         hash_key %= TABLE_SIZE;
         L->LHead = Table[hash_key];
-        // AddNodeAscend(L, &data);
 
         // 查找是否存在重复电话号码
         int passFlag = 0;
@@ -102,29 +101,25 @@ int main() {
     }
 
     int slotNum;
-    printf("enter hash slot:\n");
-    while (scanf("%d", &slotNum) != EOF) {
+    char queryPhone[20];
+    printf("enter phone number:\n");
+    while (scanf("%s", queryPhone) != EOF) {
         getchar();
-        printf("enter phone number:\n");
-        char queryPhone[20];
-        scanf("%s", queryPhone);
-        getchar();
-        if (slotNum >= 0 && slotNum < 10) {
-            Link pcurr = Table[slotNum];
-            for (; pcurr!= NULL; pcurr = pcurr->next) {
-                if ((strcmp(((pND) pcurr->pdata)->phoneNumber, queryPhone)) == 0) {
-                    printf("%s\t%s\t%3d\n",
-                           ((pND) pcurr->pdata)->phoneNumber, ((pND) pcurr->pdata)->userName,
-                           ((pND) pcurr->pdata)->age);
-                    break;
-                }
+        slotNum = (unsigned int) ElfHash(queryPhone) % TABLE_SIZE;
+        Link pcurr = Table[slotNum];
+        int isFound = 0;
+        for (; pcurr != NULL; pcurr = pcurr->next) {
+            if ((strcmp(((pND) pcurr->pdata)->phoneNumber, queryPhone)) == 0) {
+                printf("%s\t%s\t%3d\n",
+                       ((pND) pcurr->pdata)->phoneNumber, ((pND) pcurr->pdata)->userName,
+                       ((pND) pcurr->pdata)->age);
+                isFound = 1;
+                break;
             }
-            printf("not found\n");
-        }else
-        {
-            printf("slot number error\n");
         }
-        printf("enter hash slot:\n");
+        if (!isFound)
+            printf("not found\n");
+        printf("enter phone number:\n");
     }
     return 0;
 }

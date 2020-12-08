@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/LLAPP.c" "C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/Alogorithm_lab3.dir/LLAPP.c.obj"
-  "C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/LLGEN.c" "C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/Alogorithm_lab3.dir/LLGEN.c.obj"
-  "C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/main.c" "C:/Users/89252/CLionProjects/Alogorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/Alogorithm_lab3.dir/main.c.obj"
+  "/Users/vins/CLionProjects/Algorithm_lab/Alogorithm_lab3/LLAPP.c" "/Users/vins/CLionProjects/Algorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/Alogorithm_lab3.dir/LLAPP.c.o"
+  "/Users/vins/CLionProjects/Algorithm_lab/Alogorithm_lab3/LLGEN.c" "/Users/vins/CLionProjects/Algorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/Alogorithm_lab3.dir/LLGEN.c.o"
+  "/Users/vins/CLionProjects/Algorithm_lab/Alogorithm_lab3/main.c" "/Users/vins/CLionProjects/Algorithm_lab/Alogorithm_lab3/cmake-build-debug/CMakeFiles/Alogorithm_lab3.dir/main.c.o"
   )
-set(CMAKE_C_COMPILER_ID "MSVC")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
